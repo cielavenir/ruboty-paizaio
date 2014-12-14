@@ -52,7 +52,7 @@ module Ruboty
 			on /paizaio languages/, name: 'languages', description: 'show languages'
 			on /paizaio setinput ?(?<input_uri>\S*)/, name: 'setinput', description: 'set input'
 			on /paizaio submit (?<language>\S+) (?<source_uri>\S+) ?(?<input_uri>\S*)/, name: 'submit', description: 'send code via uri'
-			on /paizaio view ?(?<id>\w*)/, name: 'view', description: 'view submission'
+			on /paizaio view ?(?<id>\S*)/, name: 'view', description: 'view submission'
 			def languages(message)
 				message.reply @languages.map{|e|e+"\n"}.join
 			end
