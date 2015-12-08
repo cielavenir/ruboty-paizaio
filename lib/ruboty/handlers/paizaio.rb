@@ -14,6 +14,7 @@ module Ruboty
                   "objective-c",
                   "java",
                   "scala",
+				  "swift",
                   "csharp",
                   "go",
                   "haskell",
